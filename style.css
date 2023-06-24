@@ -1,0 +1,51 @@
+.center {
+  text-align: center;
+}
+
+#table-wrapper {
+  overflow: auto;
+  width: 100%;
+  height: 70%;
+}
+#table-main {
+  width: 100%;
+}
+#table-main tr.yellow td {
+  background-color: yellow;
+  border-color: black;
+  color: black;
+}
+#button-area {
+  padding-bottom: 1rem;
+}
+div code {
+  background-color: #f2f1f1;
+  font-family: Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;
+}
+#input-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+#input-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#input-buttons select {
+  width: 70%;
+  margin-top: 5px;
+}
+#input-buttons #set-json {
+  margin: 10px 0px 5px 0px;
+}
+#result {
+  min-height: 1rem;
+}
+#result.error {
+  color: red;
+}
+#selected-maxms, #inputted-json {
+  display: none;
+}

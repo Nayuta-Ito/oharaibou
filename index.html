@@ -1,0 +1,46 @@
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="./calc.js"></script>
+  <script src="./presets.js"></script>
+  <script src="./ui.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="table-wrapper">
+    <table border="2" id="table-main">
+      <thead>
+        <tr id="table-header">
+          <th>index</th>
+          <th>preset name</th>
+          <th>JSON</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <div id="button-area" class="center">
+    <span>Choose max N(s):</span>
+  </div>
+  <div class="center">
+    Enter a JSON below.<br>
+    Valid characters: <code>0Okxm{}[],":</code> and space and line break
+  </div>
+  <div id="input-wrapper">
+    <div>
+      <textarea id="input-json"></textarea>
+    </div>
+    <div id="input-buttons">
+      <div style="display: none">
+        <input type="checkbox" id="use-touhoukyodaisuu-version" value="false">
+        <label for="use-touhoukyodaisuu-version">Use TOUHOUKYODAISUU version</label>
+      </div>
+      <select id="preset">
+      </select>
+      <input type="button" id="set-json" value="Check standardness and compare">
+    </div>
+  </div>
+  <div id="result" class="center"></div>
+  <div id="selected-maxms">1</div>
+  <div id="inputted-json"></div>
+</body>
